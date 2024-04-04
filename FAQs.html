@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ's</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</Head>
+
+<style>
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .icon {
+    margin-top: 100px;
+    margin-left: 100px;
+    padding-left: 50px;
+    margin-right: 40px;
+  }
+
+  a:hover {
+    color: black;
+  }
+
+  Footer {
+    margin-top: 3%;
+  }
+</style>
+</style>
+
+<body style="background-color: azure;">
+  <h2 class="center">Contact Us</h2>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="Home.html">The Library</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Help.html">Help</a></li>
+        <li><a href="FAQs.html">FAQ's</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" action="/action_page.php">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+  <h2 style="text-align: center; color: white; background-color: rgba(0, 0, 0, 0.403);">FAQ's</h2>
+
+  <button class="accordion">1. How do I obtain a library card?</button>
+  <div class="panel">
+    <p>To obtain a library card, visit our library in person and fill out an application form. You will need to provide
+      proof of identity and address. Once your application is processed, you will receive your library card, granting
+      you access to our resources.</p>
+  </div>
+
+  <button class="accordion">2. What are the borrowing policies for library materials?</button>
+  <div class="panel">
+    <p>The borrowing policies vary depending on the type of material. Generally, books can be borrowed for up to three
+      weeks, while DVDs and CDs can be borrowed for one week. Renewals are possible unless there is a hold on the item.
+    </p>
+  </div>
+
+  <button class="accordion">3. How can I renew my borrowed items?</button>
+  <div class="panel">
+    <p>You can renew your borrowed items online through our website by logging into your library account. Alternatively,
+      you can call our circulation desk during business hours to request a renewal.</p>
+  </div>
+  <button class="accordion">4. Can I access e-books and online databases from home?</button>
+  <div class="panel">
+    <p>Yes, you can access our collection of e-books and online databases remotely with your library card. Simply log in
+      to our website using your library card credentials, and you can browse and borrow digital materials from anywhere
+      with internet access.</p>
+  </div>
+  <button class="accordion">5. How do I reserve a meeting room at the library?</button>
+  <div class="panel">
+    <p>To reserve a meeting room at the library, please contact our administrative office during business hours.
+      Reservation policies and availability may vary, so it's best to inquire in advance.</p>
+  </div>
+  <button class="accordion">6. How can I suggest a purchase for the library's collection?</button>
+  <div class="panel">
+    <p>We welcome suggestions for new materials to add to our collection. You can submit a purchase suggestion through
+      our website or speak with a staff member at the circulation desk. We consider all suggestions based on factors
+      such as relevance, popularity, and budget constraints.</p>
+  </div>
+  <button class="accordion">7. What services are available for children and teens at the
+    library?</button>
+  <div class="panel">
+    <p>We offer a variety of programs and resources for children and teens, including storytime sessions, homework help,
+      and teen book clubs. Check our events calendar for upcoming programs tailored to younger library patrons.</p>
+  </div>
+  <button class="accordion">8. How do I access my library account online?</button>
+  <div class="panel">
+    <p>You can access your library account online by visiting our website and clicking on the "My Account" or "Login"
+      link. Enter your library card number and PIN to log in and manage your account, including renewing borrowed items,
+      placing holds, and viewing your borrowing history.</p>
+  </div>
+  <button class="accordion">9. Can I donate books to the library?</button>
+  <div class="panel">
+    <p>Yes, we accept donations of books and other materials in good condition. Please bring your donations to the
+      circulation desk during library hours. Note that we may not be able to accept all donations due to space
+      constraints and collection needs.</p>
+  </div>
+  <button class="accordion">10. How can I get help with research or finding specific
+    information?</button>
+  <div class="panel">
+    <p>Our knowledgeable staff members are available to assist you with research and finding specific information. You
+      can visit the reference desk in person, call us during business hours, or send an email with your inquiry. We're
+      here to help you make the most of our resources.</p>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+
+  <footer>
+    <div class="container" style="background-color: black;color: white; width: 100%;">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3><a href="Home.html" style="color: whitesmoke;">Home</a> </h3>
+          <p>Our library website home page welcomes you with a clean interface featuring quick access to
+            search, browse, and reserve materials. Engage with upcoming events, explore digital resources,
+            and connect with library services effortlessly. Discover a world of knowledge at your fingertips
+            with intuitive navigation and user-friendly design.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3> <a href="About.html" style="color: whitesmoke;">About</a></h3>
+          <p>Our About page provides insight into our library's mission, history, and commitment to serving
+            the community. Learn about our dedicated staff, extensive collection, and innovative programs.
+            Discover how we strive to foster literacy, lifelong learning, and cultural enrichment through
+            our services and initiatives.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3> <a href="Contact.html" style="color: whitesmoke;">Contact</a></h3>
+          <p>Our library's Contact page offers a convenient way to reach out for assistance or inquiries. Find
+            essential contact information including phone numbers, email addresses, and physical addresses
+            for various library branches. Whether you have questions about services, events, or resources,
+            our staff is here to help you promptly.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3> <a href="Help.html" style="color: whitesmoke;">Help</a></h3>
+          <p>Our library website Help page is your go-to resource for resolving any inquiries or issues
+            promptly. Find comprehensive FAQs, troubleshooting guides, and contact information for
+            personalized assistance. Whether you need assistance with accessing resources, navigating the
+            site, or any other queries, we're here to support you every step of the way.</p>
+        </div>
+        <div class="col-sm-4">
+          <h3><a href="FAQs.html" style="color: whitesmoke;">FAQ's</a></h3>
+          <p>Explore our library website's FAQ's page for comprehensive answers to common queries. Find
+            information on borrowing policies, accessing digital resources, library hours, and more. Whether
+            you're a new patron or a seasoned visitor, this resource provides clarity and guidance, ensuring
+            a seamless experience with our library services.</p>
+        </div>
+        <div class="col-sm-4">
+          <div class="icon">
+            <a href="https://www.facebook.com" style="margin-right: 25px;"><i class="fa fa-facebook"
+                style="font-size:20px; color: blue;"></i></a>
+            <a href="https://www.whatsApp.com" style="margin-right:15px;"><i class="fa fa-whatsapp"
+                style="font-size:20px; color: green;"></i></a>
+            <a href="https://www.Twitter.com" style="margin-right: 15px;"><i class="fa fa-twitter"
+                style="font-size:20px;color: blue;"></i></a>
+            <a href="https://www.LinkedIn.com" style="margin-right: 15px;"><i class="fa fa-linkedin"
+                style="font-size:20px; color:white;"></i></a>
+            <a href="https://www.Instagram.com" style="margin-right: 15px;"><i class="fa fa-instagram"
+                style="font-size:20px; color:rgb(186, 9, 9);"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+      </div>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
